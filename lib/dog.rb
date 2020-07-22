@@ -1,5 +1,5 @@
 class Dog 
-  @@dogs = []
+  @@all = []
   
   attr_reader :name
   
@@ -9,7 +9,7 @@ class Dog
   end
   
   def save
-    @@dogs << self
+    @@all << self
   end
   
   def self.all 
