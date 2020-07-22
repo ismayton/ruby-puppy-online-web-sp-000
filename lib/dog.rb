@@ -5,21 +5,21 @@ class Dog
   
   def initialize(name)
   @name = name 
-  @@all << self
+  @@dogs << self
   end
   
   def self.all 
-    @@all 
+    @@dogs 
   end 
   
   def self.print_all
-    @@all.each do |dog| 
-      puts dog
+    @@dogs.each do |dog| 
+      puts dog.name
     end
   end 
     
   def self.clear_all 
-    @@all = [] 
+    @@dogs = [] 
   end 
   
 end
