@@ -1,7 +1,10 @@
 class Dog 
   @@dogs = []
   
+  attr_reader :name
+  
   def initialize(name)
+  @name = name 
   @@all << self
   end
   
